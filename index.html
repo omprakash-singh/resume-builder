@@ -6,6 +6,7 @@
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
      <title>|| RESUME BUILDER ||</title>
 </head>
 
@@ -28,7 +29,7 @@
           <img class="menuicon" src="img/icon/menu.png" alt="menu icon">
      </header>
 
-     <section id="home">
+     <div id="home">
 
           <div class="about-resume-builder">
                <h1>
@@ -58,9 +59,9 @@
                     <img class="img-template-sample" src="img/templates/template-1.jpeg" alt="">
                </a>
           </div>
-     </section>
+     </div>
 
-     <section id="step">
+     <div id="step">
           <h1>
                3 EASY STEPS TO CREATE YOUR PERFECT RESUME
           </h1>
@@ -125,19 +126,98 @@
                     </a>
                </div>
           </div>
-     </section>
+     </div>
 
-     <section id="resumeTemplates">
-
-     </section>
+     <div id="resumeTemplates">
+          <div class="swiper mySwiper">
+               <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                         <a href="">
+                              <img src="img/templates/template-1.jpeg" alt="">
+                         </a>
+                    </div>
+                    <div class="swiper-slide">
+                         <a href="">
+                              <img src="img/templates/template-2.jpg" alt="">
+                         </a>
+                    </div>
+                    <div class="swiper-slide">
+                         <a href="">
+                              <img src="img/templates/template-3.jpg" alt="">
+                         </a>
+                    </div>
+                    <div class="swiper-slide">
+                         <a href="">
+                              <img src="img/templates/template-4.jpg" alt="">
+                         </a>
+                    </div>
+                    <div class="swiper-slide">
+                         <a href="">
+                              <img src="img/templates/template-5.jpg" alt="">
+                         </a>
+                    </div>
+                    <div class="swiper-slide">
+                         <a href="">
+                              <img src="img/templates/template-6.jpg" alt="">
+                         </a>
+                    </div>
+                    <div class="swiper-slide">
+                         <a href="">
+                              <img src="img/templates/template-7.jpg" alt="">
+                         </a>
+                    </div>
+                    <div class="swiper-slide">
+                         <a href="">
+                              <img src="img/templates/template-8.jpg" alt="">
+                         </a>
+                    </div>
+                    <div class="swiper-slide">
+                         <a href="">
+                              <img src="img/templates/template-9.jpg" alt="">
+                         </a>
+                    </div>
+                    <div class="swiper-slide">
+                         <a href="">
+                              <img src="img/templates/template-10.jpg" alt="">
+                         </a>
+                    </div>
+               </div>
+               <div class="swiper-button-next"></div>
+               <div class="swiper-button-prev"></div>
+               <div class="swiper-pagination"></div>
+          </div>
+     </div>
 
      <footer>
-          <h1 class="icon footer">Resume<span> Builder</span></h1>
+
      </footer>
 
 
 
+
+
+
+     <!-- Swiper JS -->
+     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+     <script>
+          var swiper = new Swiper(".mySwiper", {
+               slidesPerView: 1,
+               spaceBetween: 30,
+               loop: true,
+               pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+               },
+               navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+               },
+          });
+     </script>
+
      <script src="script.js"></script>
+
 </body>
 
 </html>
