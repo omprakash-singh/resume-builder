@@ -161,12 +161,12 @@ nav{
      color: #fff;
 }
 footer{
-     background-color: rgb(15, 15, 216);
+     background-color: #000;
      width: 100%;
      height: 90px;
      transform: translate(-50% -50%);
      position: absolute;
-     top: 200%;
+     top: 166%;
      text-align: center;
 }
 .footer {
@@ -216,7 +216,7 @@ footer{
      footer{
           transform: translate(-50% -50%);
           position: absolute;
-          top: 300%;
+          top: 266%;
           text-align: center;
      }
 
